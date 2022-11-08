@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cuisine.Core.Domain\Cuisine.Core.Domain.csproj" />
     <ProjectReference Include="..\Cuisine.Core.Infrastructures\Cuisine.Core.Infrastructures.csproj" />
-    <ProjectReference Include="..\Cuisine.Core.Photos.Domain\Cuisine.Core.Photos.Domain.csproj" />
   </ItemGroup>
 
 </Project>

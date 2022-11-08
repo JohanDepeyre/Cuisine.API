@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Cuisine.Core.Photos.Domain;
+using Cuisine.Core.Domain;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Cuisine.Core.Infrastructures.Data.Configurations;
+using Cuisine.Core.Framework;
 
 namespace Cuisine.Core.Infrastructures.Data
 {
-    public class DatabaseContext : DbContext
+    public class DatabaseContext : DbContext , IUnitOfWork
     {
         public DatabaseContext(DbContextOptions options)
          : base(options)

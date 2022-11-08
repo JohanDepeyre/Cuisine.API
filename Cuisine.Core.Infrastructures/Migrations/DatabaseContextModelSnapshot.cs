@@ -22,7 +22,7 @@ namespace Cuisine.Core.Infrastructures.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Cuisine.Core.Photos.Domain.Photo", b =>
+            modelBuilder.Entity("Cuisine.Core.Domain.Photo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,12 +30,12 @@ namespace Cuisine.Core.Infrastructures.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("IdRecette")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("RecetteId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -43,12 +43,10 @@ namespace Cuisine.Core.Infrastructures.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RecetteId");
-
                     b.ToTable("Photo", (string)null);
                 });
 
-            modelBuilder.Entity("Cuisine.Core.Photos.Domain.Recette", b =>
+            modelBuilder.Entity("Cuisine.Core.Domain.Recette", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -70,22 +68,6 @@ namespace Cuisine.Core.Infrastructures.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Recette", (string)null);
-                });
-
-            modelBuilder.Entity("Cuisine.Core.Photos.Domain.Photo", b =>
-                {
-                    b.HasOne("Cuisine.Core.Photos.Domain.Recette", "Recette")
-                        .WithMany("Photos")
-                        .HasForeignKey("RecetteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Recette");
-                });
-
-            modelBuilder.Entity("Cuisine.Core.Photos.Domain.Recette", b =>
-                {
-                    b.Navigation("Photos");
                 });
 #pragma warning restore 612, 618
         }

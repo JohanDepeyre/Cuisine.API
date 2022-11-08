@@ -1,4 +1,6 @@
 using Cuisine.Core.Infrastructures.Data;
+using Cuisine.Core.Infrastructures.Repository;
+using Cuisine.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
 
@@ -17,6 +19,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(connectionString));
 
+builder.Services.AddTransient<IPhotoRepository, DefaultPhotoRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

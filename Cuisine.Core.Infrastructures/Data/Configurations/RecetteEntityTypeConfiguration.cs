@@ -1,4 +1,4 @@
-﻿using Cuisine.Core.Photos.Domain;
+﻿using Cuisine.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

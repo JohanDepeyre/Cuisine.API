@@ -1,4 +1,4 @@
-﻿using Cuisine.Core.Photos.Domain;
+﻿using Cuisine.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -16,7 +16,7 @@ namespace Cuisine.Core.Infrastructures.Data.Configurations
         {
             builder.ToTable("Photo");
             builder.HasKey(p => p.Id);
-            builder.HasOne(item => item.Recette).WithMany(item => item.Photos);
+          
         }
     }
 }

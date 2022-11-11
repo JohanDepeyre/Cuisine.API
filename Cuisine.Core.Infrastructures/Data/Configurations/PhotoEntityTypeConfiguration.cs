@@ -1,4 +1,4 @@
-﻿using Cuisine.Core.Domain;
+﻿using Cuisine.Core.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

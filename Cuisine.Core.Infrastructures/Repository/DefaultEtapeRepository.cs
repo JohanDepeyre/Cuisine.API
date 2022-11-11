@@ -13,24 +13,27 @@ using Cuisine.Core.Domain.Entity;
 
 namespace Cuisine.Core.Infrastructures.Repository
 {
-    public class DefaultPhotoRepository : IPhotoRepository
+    public class DefaultEtapeRepository : IEtapeRepository
     {
         public readonly DatabaseContext _context;
-        public DefaultPhotoRepository(DatabaseContext context)
+        public DefaultEtapeRepository(DatabaseContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public IUnitOfWork unitOfWork => this._context;
 
-        public Photo AddOne(Photo photo)
+      
+        public Etape AddOne(Etape photo)
         {
-            return this._context.Add(photo).Entity;
+            throw new NotImplementedException();
         }
-     
-        public ICollection<Photo> GetAll()
+
+        public ICollection<Etape> GetAll()
         {
-            return _context.Photos.ToList();
+            return _context.Etapes.ToList();
         }
+
+      
     }
 }

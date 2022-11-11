@@ -1,9 +1,8 @@
 using Cuisine.Core.Infrastructures.Data;
 using Cuisine.Core.Infrastructures.Repository;
-using Cuisine.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
-
+using Cuisine.Core.Domain.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

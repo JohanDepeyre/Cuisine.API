@@ -5,15 +5,13 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuisine.API", "Cuisine.API\Cuisine.API.csproj", "{46EC1EC3-4099-43E6-BBC7-EEF337A01F8D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuisine.API.Test", "Cuisine.API.Test\Cuisine.API.Test.csproj", "{09ECE4EA-2D71-4A74-82A8-AD45C46A1A38}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{65348619-DB86-4C70-8A0F-D5ACE024F5D6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuisine.Core.Infrastructures", "Cuisine.Core.Infrastructures\Cuisine.Core.Infrastructures.csproj", "{A1A0D63C-D8EE-4D9A-BB20-783694E2B2CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuisine.Core.Domain", "Cuisine.Core.Domain\Cuisine.Core.Domain.csproj", "{3A472935-27EC-4443-A9B3-2D268691A4CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuisine.Core.Domain", "Cuisine.Core.Domain\Cuisine.Core.Domain.csproj", "{3A472935-27EC-4443-A9B3-2D268691A4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuisine.Core.Framework", "Cuisine.Core.Framework\Cuisine.Core.Framework.csproj", "{D47DE1DE-F10C-4CBA-BB12-9F4324EE2C58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuisine.Core.Framework", "Cuisine.Core.Framework\Cuisine.Core.Framework.csproj", "{D47DE1DE-F10C-4CBA-BB12-9F4324EE2C58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{46EC1EC3-4099-43E6-BBC7-EEF337A01F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46EC1EC3-4099-43E6-BBC7-EEF337A01F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46EC1EC3-4099-43E6-BBC7-EEF337A01F8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09ECE4EA-2D71-4A74-82A8-AD45C46A1A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09ECE4EA-2D71-4A74-82A8-AD45C46A1A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09ECE4EA-2D71-4A74-82A8-AD45C46A1A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09ECE4EA-2D71-4A74-82A8-AD45C46A1A38}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A1A0D63C-D8EE-4D9A-BB20-783694E2B2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A1A0D63C-D8EE-4D9A-BB20-783694E2B2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1A0D63C-D8EE-4D9A-BB20-783694E2B2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU

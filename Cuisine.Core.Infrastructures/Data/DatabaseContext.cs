@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Cuisine.Core.Domain;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Cuisine.Core.Infrastructures.Data.Configurations;
 using Cuisine.Core.Framework;
+using Cuisine.Core.Domain.Entity;
 
 namespace Cuisine.Core.Infrastructures.Data
 {
@@ -27,8 +27,10 @@ namespace Cuisine.Core.Infrastructures.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new PhotoEntityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new RecetteEntityTypeConfiguration());
+            modelBuilder.ApplyConfiguration(new EtapeEntityTypeConfiguration());
         }
         public DbSet<Photo> Photos { get; set; }
+        public DbSet<Etape> Etapes { get; set; }
         public DbSet<Recette> Recettes { get; set; }
 
     }

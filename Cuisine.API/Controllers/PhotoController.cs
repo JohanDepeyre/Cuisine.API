@@ -1,10 +1,11 @@
 ﻿using Cuisine.Core.Infrastructures.Data;
-using Cuisine.Core.Domain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.IO;
+using Cuisine.Core.Domain.Repository;
+using Cuisine.Core.Domain.Entity;
 
 namespace Cuisine.API.Controllers
 {

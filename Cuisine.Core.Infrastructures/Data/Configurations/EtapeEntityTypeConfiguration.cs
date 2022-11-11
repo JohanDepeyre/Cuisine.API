@@ -1,7 +1,6 @@
 ﻿using Cuisine.Core.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace Cuisine.Core.Infrastructures.Data.Configurations
 {
-    public class RecetteEntityTypeConfiguration : IEntityTypeConfiguration<Recette>
+    public class EtapeEntityTypeConfiguration: IEntityTypeConfiguration<Etape>
     {
-        public void Configure(EntityTypeBuilder<Recette> builder)
+        public void Configure(EntityTypeBuilder<Etape> builder)
         {
-            builder.ToTable("Recette");
+            builder.ToTable("Etape");
+            builder.HasKey(p => p.Id);
+
         }
     }
 }

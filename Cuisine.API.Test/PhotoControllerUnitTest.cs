@@ -1,5 +1,6 @@
 using Cuisine.API.Controllers;
 using Cuisine.Core.Domain;
+using Cuisine.Core.Domain.Repository;
 using Cuisine.Core.Framework;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
